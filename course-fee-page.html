@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculate Fees</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- optional: font awesome if you want icons -->
+  <link rel="stylesheet" href="./css-styles/styling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="./js- styles/style.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="./Images/1000192771.jpg" alt="Empowering The Nation Logo" class="logo">
+    <h1>Calculate Total Fees</h1>
+    <p>Select the courses you want and click <strong>Calculate Total</strong>.</p>
+  </header>
+
+  <main>
+    <h2>Select Courses</h2>
+
+    <form id="courseForm" onsubmit="return false;">
+     <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="phone">Phone:</label><br>
+      <input type="tel" id="phone" name="phone" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+        <label>
+        <input type="checkbox" name="courses" value="1500" data-name="First Aid"> First Aid (R1500)
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="courses" value="1500" data-name="Sewing"> Sewing (R1500)
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="courses" value="1500" data-name="Landscaping"> Landscaping (R1500)
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="courses" value="1500" data-name="Life Skills"> Life Skills (R1500)
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="courses" value="750" data-name="Child Minding"> Child Minding (R750)
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="courses" value="750" data-name="Cooking"> Cooking (R750)
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="courses" value="750" data-name="Garden Maintenance"> Garden Maintenance (R750)
+      </label><br><br>
+      <button type="button" id="calculateBtn">Calculate Total</button>
+    </form>
+
+    <p style="margin-top:18px;">
+   <a href="homePage.html"><button><i class="fa-solid fa-house"></i> Home</button></a>
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Empowering the Nation</p>
+  </footer>
+</body>
+</html>
+
