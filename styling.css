@@ -1,0 +1,212 @@
+/* styles.css - Majestic & Uplifting Theme */
+
+/* Apply feminine & professional font styling */
+body {
+  font-family: 'Poppins', sans-serif; /* clean and modern base font */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f0fdf4, #e6f5ea);
+  color: #2e2e2e;
+}
+
+/* Header container */
+header {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #0b3d2e, #1b6b4a); /* deep forest green gradient */
+  color: #fff;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* Flexbox layout: logo left, text center */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Logo stays left */
+.logo {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* Text centered */
+.header-text {
+  flex: 1;
+  text-align: center; /* ✅ centers heading + subheading */
+}
+
+/* Elegant header with Playfair for contrast */
+header h1 {
+  font-family: 'Playfair Display', serif; /* stylish & elegant */
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+
+/* Main content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(to right, #2d6a4f, #81b29a); /* green gradient */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    margin: 12px 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 240px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #81b29a, #2d6a4f);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Links inside buttons */
+a {
+    text-decoration: none;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 25px 20px;
+    background: linear-gradient(135deg, #2d6a4f, #81b29a);
+    color: #fff;
+    font-weight: 500;
+    margin-top: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Headings in main content */
+main h3 {
+    color: #1b4332; /* strong green accent */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Lists */
+main ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Input fields for form */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #81b29a;
+    font-size: 1rem;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Maps iframe */
+iframe {
+    border: 2px solid #81b29a;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* Back button special */
+button i {
+    margin-right: 8px;
+}
+.logo{
+
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-left: 20px;
+}
+/* Default (desktop first) */
+img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 20px auto; /* center */
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 18px;
+  margin: 10px auto;
+  display: block;
+  width: 250px;
+}
+
+/* Phones */
+@media screen and (max-width: 600px) {
+  img {
+    width: 80%;   /* logo fills most of screen */
+  }
+
+  button {
+    width: 100%;   /* buttons stretch full width */
+    font-size: 16px;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  img {
+    width: 60%;
+  }
+
+  button {
+    width: 80%;
+    font-size: 17px;
+  }
+}
+
+/* Large desktops */
+@media screen and (min-width: 1025px) {
+  img {
+    width: 300px;  /* fixed size */
+  }
+
+  button {
+    width: 250px;
+  }
+}  
+
+
